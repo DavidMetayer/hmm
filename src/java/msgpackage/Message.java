@@ -5,6 +5,8 @@
  */
 package msgpackage;
 
+import java.util.Date;
+
 /**
  *
  * @author c0640891
@@ -14,7 +16,7 @@ public class Message {
     String title;
     String contents;
     String author;
-    String senttime;
+    Date senttime;
     
     public void setId(int a){
         this.id = a;
@@ -28,7 +30,7 @@ public class Message {
     public void setAuthor(String s){
         this.author = s;
     }
-    public void setTime(String s){
+    public void setTime(Date s){
         this.senttime = s;
     }
     public int getId(){
@@ -43,10 +45,13 @@ public class Message {
     public String getAuthor(){
         return author;
     }
-    public String getTime(){
+    public Date getTime(){
         return senttime;
     }
     
+    public String getTimeString(){
+        return senttime.toString();
+    }
     
     
 }
