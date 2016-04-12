@@ -36,8 +36,8 @@ public class MessageController {
         return null;
     }
 
-    Iterable<Message> getAllmessages() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public List<Message> getAll(){
+        return message;
     }
-    
+
 }
